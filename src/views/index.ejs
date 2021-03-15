@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Busca endereço</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #111;">
+    <div class="head">
+        <h1>Digite o CEP para encontrar o endereço no Brasil </h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <span>Português</span>
+            <div class="content">
+                <h2>Digite o CEP para localizar o endereço</h2>
+                <form action="/envia-cep" method="POST">
+                    <div class="form">
+                        <label for="cep">CEP</label>
+                        <input placeholder="Digite o número do CEP" class="form-control mt-1" type="text" name="cep"
+                            id="cep">
+                        <input type="submit" class="btn btn-light mt-2" value="Procurar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <span>English</span>
+            <div class="content">
+                <h2>Enter the zip code to find the address</h2>
+                <form action="/envia-cep" method="POST">
+                    <div class="form">
+                        <label for="cep">ZIP CODE</label>
+                        <input placeholder="Enter zip code number" class="form-control mt-1" type="text" name="cep"
+                            id="cep">
+                        <input type="submit" class="btn btn-light mt-2" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <span>Español</span>
+            <div class="content">
+                <h2>Código postal para encontrar la dirección</h2>
+                <form action="/envia-cep" method="POST">
+                    <div class="form">
+                        <label for="cep">CÓDIGO POSTAL</label>
+                        <input placeholder="Ingrese el código postal" class="form-control mt-1" type="text" name="cep"
+                            id="cep">
+                        <input type="submit" class="btn btn-light mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
