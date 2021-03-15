@@ -1,7 +1,6 @@
 # search-CEP-nodejs
 Search address in Brazil
 
-# search CEP
 ### this project uses the brazil post office api and runs on the nodejs server
 
 
